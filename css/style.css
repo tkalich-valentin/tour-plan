@@ -363,6 +363,10 @@ template {
   background-color: #fff;
 }
 
+.navbar-menu {
+  font-size: 14px;
+}
+
 .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -437,7 +441,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
-  padding-right: 75px;
+  padding-right: 108px;
 }
 
 .search__button {
@@ -475,12 +479,14 @@ template {
   color: #333333;
 }
 
-.__menu-button {
+.menu-menu-button {
   display: none;
 }
 
 @media (max-width: 1200px) {
-  max-width: 960px;
+  .container {
+    max-width: 960px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -516,7 +522,7 @@ template {
   }
   .container {
     max-width: 576px;
-    width: 92%;
+    width: 87%;
   }
   .navbar__serach, .navbar-menu, .navbar__user {
     display: none;
@@ -563,86 +569,6 @@ template {
   position: relative;
   .navbar {
     position: relative;
-  }
-  .navbar-bottom {
-    z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  .navbar__user {
-    z-index: 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0px;
-    position: absolute;
-    width: 49px;
-    height: 68px;
-    top: 50%;
-    left: 50%;
-    top: 102px;
-  }
-  .navbar-menu {
-    z-index: 4;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0px;
-    position: absolute;
-    width: 135px;
-    height: 225px;
-    top: 50%;
-    left: 35%;
-  }
-  .user__name {
-    margin-left: 0;
-    font-size: 14px;
-    line-height: 18px;
-    color: #fff;
-  }
-  .header__search {
-    z-index: 3;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0px;
-    position: absolute;
-    width: 90%;
-    height: 40px;
-    top: 197px;
-    pading-top: 102px;
   }
 }
 /*# sourceMappingURL=style.css.map */
