@@ -515,7 +515,7 @@ template {
 }
 
 @media (max-width: 768px) {
-  .__menu-button {
+  .menu-menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -527,7 +527,7 @@ template {
   .navbar__serach, .navbar-menu, .navbar__user {
     display: none;
   }
-  .header__search {
+  .navbar__search {
     display: none;
   }
 }
