@@ -4,7 +4,8 @@
 
 @media (max-width: 992px)
   .container
-    max-width: 700px
+    max-width: 760px
+    flex-basis: content
   .logo
     width: 132px
   .navbar
@@ -22,6 +23,7 @@
         font-size: 12px
         line-height: 15px
 @media (max-width: 768px)
+
   .menu-menu-button
     display: flex
   .container
@@ -34,27 +36,51 @@
     display: none
     &-top
 
-.menu
-  &-button
-    display: flex
-    width: 16px
-    height: 11px
-    align-items: center
-    justify-content: space-between
-    flex-direction: column
-    border: none
-    background-color: #fff
-    cursor: pointer
-    &__line
+  .menu
+    &-button
+      display: flex
       width: 16px
-      height: 1px
-      background-color: $text-color
+      height: 11px
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+  .stars
+    flex-basis: auto
+  .hotel
+    &-name
+      flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
+
+    &-info
+      &__text
+        width: 100%
+      &__name
+        margin-top: 10px
+        margin-bottom: 0
+      &__rating
+        display: none
+      &__offer
+        order: -1
+        margin-left: 0
+      &__description
+        margin: 5px 0
+
 @media (max-width: 576px)
   .logo
     width: 99px
   .navbar-top
-    width: 320px
-    height: 70px
+    width: 100%
+    padding-top: 26px
+    padding-bottom: 26px
+
     left: 0px
     top: 0px
 
