@@ -633,20 +633,9 @@ template {
 }
 
 @media (max-width: 768px) {
-  .menu-menu-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .container {
-    max-width: 576px;
+    max-width: 700px;
     width: 87%;
-  }
-  .navbar__serach, .navbar-menu, .navbar__user {
-    display: none;
-  }
-  .navbar__search {
-    display: none;
   }
   .menu-button {
     display: -webkit-box;
@@ -720,7 +709,7 @@ template {
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
   position: relative;
   .navbar {
     position: relative;
@@ -730,6 +719,17 @@ template {
   }
   .hotel {
     padding: 0;
+  }
+  .menu-menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__serach, .navbar-menu, .navbar__user {
+    display: none;
+  }
+  .navbar__search {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
