@@ -711,6 +711,9 @@ template {
     height: 1px;
     background-color: #333333;
   }
+  .slider {
+    width: 700px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -780,6 +783,9 @@ template {
         -ms-flex-order: -1;
             order: -1;
     margin-left: 0;
+  }
+  .slider {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
