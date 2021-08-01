@@ -22,6 +22,8 @@
       &__link
         font-size: 12px
         line-height: 15px
+  .slider
+    width: 100%
 @media (max-width: 768px)
 
   .menu
@@ -41,6 +43,12 @@
         background-color: $text-color
   .slider
     width: 700px
+    height: 450px
+  .swiper-container
+    min-width: 100%
+    max-height: auto
+    position: relative
+    border: 8px
 
 @media (max-width: 576px)
   .logo
@@ -90,5 +98,21 @@
       &__offer
         order: -1
         margin-left: 0
+  .swiper-container
+    min-width: 100%
+    height: 278px
+    position: relative
+    border: 8px
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+      z-index: 10
   .slider
     width: 100%
