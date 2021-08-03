@@ -518,7 +518,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+
   padding-bottom: 70px;
 }
 
@@ -802,16 +802,16 @@ template {
   margin-left: 8px;
 }
 
-.bookig__num {
+.booking .bookig__num {
   margin-left: 8px;
 }
 
-.bookig__num__num {
+.booking__num {
   font-weight: 600;
   margin-left: 8px;
 }
 
-.bookig__num__button {
+.booking__button {
   width: 100%;
   min-height: 45px;
   font-weight: 600;
@@ -848,7 +848,7 @@ template {
 }
 
 @media (max-width: 992px) {
-  .container {
+  .container, .newsletter-wrapper {
     max-width: 700px;
     -ms-flex-preferred-size: content;
         flex-basis: content;
@@ -893,9 +893,6 @@ template {
   .slider {
     width: 100%;
   }
-  .map {
-    width: 340px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -931,9 +928,6 @@ template {
     width: 340px;
     height: 210px;
   }
-  .map {
-    height: 210px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -951,10 +945,7 @@ template {
     height: 250px;
   }
   .hotel__slider {
-    margin-bottom: 20px;
-  }
-  .map {
-    width: 100%;
+    margin-bottom: 400px;
   }
 }
 
@@ -968,9 +959,6 @@ template {
   }
   .logo {
     width: 99px;
-  }
-  .hotel {
-    padding: 0;
   }
   .menu-menu-button {
     display: -webkit-box;
@@ -1014,23 +1002,140 @@ template {
   }
   .slider {
     height: 179px;
+    margin-bottom: 20px;
   }
   .hotel-right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 450px;
   }
-  .booking {
+  .booking, .map {
     width: 100%;
   }
   .map {
     width: 100%;
-    height: 172px;
   }
-  .hotel-info__description {
+  .hotel-info {
     padding-bottom: 38px;
   }
+  .map {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    border-radius: 8px;
+  }
+}
+
+.newsletter-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 576px;
+  width: 92%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.newsletter .newsletter-wrapper {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.newsletter .subscribe {
+  width: 100%;
+}
+
+.newsletter .newsletter {
+  padding: 76px 0 83px 0;
+}
+
+.newsletter .newsletter__title {
+  margin-bottom: 37px;
+}
+
+.newsletter {
+  position: relative;
+  padding: 98px 0 87px 0;
+  background-image: url(../img/newsletter-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.newsletter:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+
+.newsletter-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 731px;
+  margin: auto;
+}
+
+.newsletter-title {
+  color: #fff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.newsletter-title__strong {
+  display: block;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  position: relative;
+  width: 355px;
+  height: 55px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.subscribe__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 33px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  padding-right: 75px;
+}
+
+.subscribe__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border: 0;
+  background-color: #EC1F46;
+  color: #fff;
+  min-width: 65px;
 }
 /*# sourceMappingURL=style.css.map */
