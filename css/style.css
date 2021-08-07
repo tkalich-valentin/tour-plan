@@ -565,7 +565,7 @@ template {
   line-height: 30px;
 }
 
-.hotel-wrapper {
+.hotel-name-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -932,8 +932,17 @@ iframe {
     width: 340px;
     height: 210px;
   }
+  .reviews__slider__text {
+    width: 455px;
+  }
   .reviews__slider__item {
     max-width: 580px;
+  }
+  h2.reviews__title {
+    font-size: 30px;
+  }
+  p.reviews-slider__text {
+    width: 455px;
   }
 }
 
@@ -1032,6 +1041,9 @@ iframe {
     padding-bottom: 40px;
     border-radius: 8px;
   }
+  .newsletter {
+    height: 319px;
+  }
   .newsletter-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1046,18 +1058,27 @@ iframe {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    bottom: 30px;
+    top: -60;
   }
   .newsletter .subscribe {
     width: 100%;
   }
-  .newsletter .newsletter {
+  .newsletter {
     padding: 76px 0 83px 0;
   }
-  .newsletter .newsletter__title {
+  .newsletter-title {
     margin-bottom: 37px;
     font-size: 20px;
+    margin-top: 0px;
   }
-  .newsletter .newsletter__title__strong {
+  .newsletter-title__strong {
+    display: block;
+    font-size: 30px;
+    line-height: 45px;
+    text-transform: uppercase;
+  }
+  .reviews__title {
     font-size: 30px;
   }
   .reviews-slider__item {
@@ -1084,6 +1105,7 @@ iframe {
   h2.reviews__title {
     font-size: 18px;
     margin-bottom: 42px;
+    line-height: 23px;
   }
   .reviews__title {
     width: 245px;
@@ -1106,6 +1128,7 @@ iframe {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
+  margin-top: 0;
 }
 
 .reviews-slider__item {
@@ -1196,7 +1219,6 @@ iframe {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 9px;
 }
 
 .reviews-slider__username {
@@ -1240,6 +1262,7 @@ iframe {
   position: relative;
   padding: 98px 0 87px 0;
   background-image: url(../img/newsletter-bg.jpg);
+  min-height: 260px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1254,7 +1277,7 @@ iframe {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  min-height: 260px;
   background-color: rgba(10, 34, 61, 0.8);
 }
 

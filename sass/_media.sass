@@ -68,8 +68,15 @@
     height: 210px
   .reviews
     &__slider
+      &__text
+        width: 455px
       &__item
         max-width: 580px
+  h2.reviews__title
+    font-size: 30px
+  p.reviews-slider__text
+    width: 455px
+
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -146,6 +153,7 @@
     border-radius: 8px
 
   .newsletter
+    height: 319px
     &-wrapper
       flex-direction: column
       max-width: 576px
@@ -153,20 +161,33 @@
       flex-wrap: wrap
     .newsletter-wrapper
       align-items: flex-start
+
+      bottom: 30px
+      top: -60
+
     .subscribe
       width: 100%
-    .newsletter
-      padding: 76px 0 83px 0
-      &__title
-        margin-bottom: 37px
-        font-size: 20px
-        &__strong
-          font-size: 30px
+  .newsletter
+    padding: 76px 0 83px 0
+    &-title
+      margin-bottom: 37px
+      font-size: 20px
+
+      margin-top: 0px
+
+      &__strong
+        display: block
+        font-size: 30px
+        line-height: 45px
+        text-transform: uppercase
   .reviews
+    &__title
+      font-size: 30px
     &-slider
 
       &__item
         padding: 0 30px 30px
+
         &:after, &:before
           display: none
 
@@ -184,6 +205,7 @@
   h2.reviews__title
     font-size: 18px
     margin-bottom: 42px
+    line-height: 23px
   .reviews__title
     width: 245px
     margin: auto
