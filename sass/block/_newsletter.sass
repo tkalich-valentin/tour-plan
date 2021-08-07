@@ -1,11 +1,15 @@
 .newsletter
+  background: transparent
   position: relative
   padding: 98px 0 87px 0
-  background-image: url(../img/newsletter-bg.jpg)
+  background-image: url(../img/newsletter-bg.jpg )
+
   background-repeat: no-repeat
   background-position: center
   background-size: cover
   &:before
+    background: transparent
+
     content: ""
     position: absolute
     top: 0
@@ -35,7 +39,7 @@
       text-transform: uppercase
 .subscribe
   position: relative
-  width: 355px
+  width: 350px
   height: 55px
   border-radius: 4px
   overflow: hidden
@@ -58,4 +62,9 @@
     border: 0
     background-color: $primary
     color: $light
-    min-width: 65px
+    word-wrap: break-word
+    -webkit-hyphens: auto
+    -moz-hyphens: auto
+    -ms-hyphens: auto
+    hyphens: auto
+    width: 65px
