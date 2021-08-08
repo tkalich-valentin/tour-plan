@@ -112,6 +112,9 @@
   .stars
     flex-basis: auto
   .hotel
+    &-slider
+      height: 179px
+      margin-bottom: 20px
     &-name
       flex-basis: 100%
     &-wrapper
@@ -128,22 +131,21 @@
       &__offer
         order: -1
         margin-left: 0
-  .slider
-    height: 179px
-    margin-bottom: 20px
+
   .hotel
     &-right
       flex-direction: column
 
   .booking, .map
     width: 100%
+    height: 210
 
   .map
     width: 100%
 
   .hotel
     &-slider
-      height: 250px
+      height: 179px
     &-info
       padding-bottom: 38px
   .map
@@ -181,16 +183,22 @@
         line-height: 45px
         text-transform: uppercase
   .reviews
-    &__title
+    h2
       font-size: 30px
-    &-slider
 
+      margin-top: 40px
+
+    &-slider
+      &__profile
+
+        margin-right: 45px
       &__item
         padding: 0 30px 30px
 
         &:after, &:before
           display: none
-
+      &__button
+        top: 45px
   .reviews-slider__button.reviews-slider__button
     top: 32px
 
