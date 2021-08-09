@@ -1,6 +1,5 @@
 .reviews
-  padding: 0 0 70px 0
-
+  padding: 40px 0 70px 0
   &__title
     font-style: normal
     font-weight: bold
@@ -15,33 +14,34 @@
       display: flex
       flex-direction: column
       align-items: center
+      background-color: #fff
+      border-radius: 8px
+
       width: 730px
       margin: 45px auto 0
       padding: 0 62px 30px
-      background-color: #fff
-      border-radius: 8px
       &:before
+        left: 62px
+        top: 13px
         content: ""
         position: absolute
         width: 70px
         height: 47px
-        left: 62px
-        top: 13px
         background-image: url(../img/quote-left.svg)
         background-repeat: no-repeat
       &:after
+        right: 62px
+        top: 118px
         content: ""
         position: absolute
         width: 70px
         height: 47px
-        right: 62px
-        top: 118px
         background-image: url(../img/quote-right.svg)
         background-repeat: no-repeat
     &__button
       position: absolute
       top: 50%
-      transform: translateY(-50px)
+      transform: translateY(-50%)
       width: 30px
       height: 30px
       background-repeat: no-repeat
@@ -51,6 +51,7 @@
       background-color: transparent
       cursor: pointer
       z-index: 99
+
       &--prev
         background-image: url(../img/arrow-prev-secondary.svg)
         left: 0
@@ -63,9 +64,6 @@
       align-items: center
       margin-top: -45px
       margin-bottom: 30px
-      img
-        margin-bottom: 0px
-
     &__avatar
       width: 90px
       height: 90px
@@ -94,5 +92,5 @@
       font-weight: normal
       font-size: 12px
       line-height: 160%
-      margin: auto
       text-align: justify
+      margin: auto
