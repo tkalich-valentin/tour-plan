@@ -930,6 +930,7 @@ template {
 
 .reviews {
   padding: 40px 0 70px 0;
+  background: #F5FAFE;
 }
 
 .reviews__title {
@@ -1073,6 +1074,7 @@ template {
 
 .activities {
   padding: 60px 0 98px 0;
+  background: #F5FAFE;
 }
 
 .activities__title {
@@ -1110,6 +1112,7 @@ template {
       -ms-flex-align: start;
           align-items: flex-start;
   overflow: hidden;
+  z-index: 1;
 }
 
 .card:before {
@@ -1147,6 +1150,7 @@ template {
 }
 
 .card__button {
+  font-family: Nunito;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -1481,6 +1485,16 @@ template {
   }
   .card {
     width: 100%;
+  }
+  .activities {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+  .activities__title {
+    margin-bottom: 36px;
+  }
+  .reviews {
+    height: 660px;
   }
 }
 /*# sourceMappingURL=style.css.map */
