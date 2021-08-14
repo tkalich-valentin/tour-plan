@@ -121,8 +121,6 @@
         max-width: 580px
 
 @media (min-width: 320px) and (max-width: 767px)
-  .newsletter
-    min-height: 333px
 
   .container
     width: 88%
@@ -171,7 +169,7 @@
 
   .map
     width: 100%
-    height: 280px
+
   .hotel
     &-slider
       height: 179px
@@ -184,7 +182,7 @@
     border-radius: 8px
 
   .newsletter
-    height: 319px
+
     &-wrapper
       flex-direction: column
       max-width: 576px
@@ -199,19 +197,20 @@
     .subscribe
       width: 100%
   .newsletter
-    max-height: 319px
+
     padding: 76px 0 83px 0
 
     &-title
-      margin-bottom: 37px
-      font-size: 20px
 
+      font-size: 20px
+      max-height: 68px
       margin-top: 0px
+      margin-bottom: 37px
 
       &__strong
         display: block
         font-size: 30px
-        line-height: 45px
+        line-height: 38px
         text-transform: uppercase
   .reviews
 
@@ -263,7 +262,7 @@
       transform: translate(50%, 0)
       top: 29px
   .newsletter
-    max-height: 319px
+
   p.reviews-slider__text
     width: 219px
     text-align: left
@@ -281,9 +280,10 @@
 
       margin-top: 0px
       font-size: 18px
-  .activities-wrapper
-    display: flex
-    flex-flow: wrap
+  .activities
+    &-wrapper
+      display: flex
+      flex-flow: wrap
     #room-card-1
       order: 1
     #room-card-2
@@ -292,3 +292,13 @@
       order: 2
     #room-card-4
       order: 4
+    &__title
+      margin-bottom: 36px
+      font-size: 18px
+    &__card
+
+      padding-bottom: 24px
+
+  .newsletter
+    &-wrapper
+      top: 0px
