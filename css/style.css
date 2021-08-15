@@ -926,6 +926,10 @@ template {
   font-size: 12px;
 }
 
+h2.newsletter-title {
+  margin-bottom: 0px;
+}
+
 .reviews {
   padding: 40px 0px 70px 0px;
   background: #F5FAFE;
