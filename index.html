@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar navbar__mobile--fixed">
     <div class="container">
       <div class = "navbar-top">
         <a href="#" class="logo">
@@ -23,7 +23,7 @@
             class="logo__image">
         </a>
 
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
@@ -31,7 +31,7 @@
         </form>
 
         
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden ">
           <img id="user-foto" src="img/user-avatar.jpg" 
           alt="Avatar: Nathan" 
           class="user__avatar"/>
@@ -58,6 +58,18 @@
 <div class="navbar-bottom">
        <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible"><a href="#" class="user navbar__user navbar__user--mobile--visible">
+          <img id="user-foto" src="img/user-avatar.jpg" 
+          alt="Avatar: Nathan" 
+          class="user__avatar"/>
+          <span class="user__name user__name--light">Nathan</span>
+        </a></li>
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible"><form action="#" class="search navbar__search navbar__search--mobile--visible">
+          <input type="text" class="search__input" placeholder="Search Location">
+          <button class="search__button">
+            <img src="img/search.svg" alt="Icon: search">
+          </button>
+        </form></li>
         <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
         <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
         <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
@@ -333,7 +345,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-wrapper">
-      <img src="img/vartical-logo.svg" alt="Best Tour Plan" class="footer__logo">
+     <a  class="footer__logo" href="#"><img src= "img/vartical-logo.svg" alt="Best Tour Plan"></a>
       <div class="footer__list footer__categories">
         <h3 class="footer__title">ALL CATEGORIES</h3>
         <ul class="footer__ul">
@@ -364,14 +376,14 @@
       <div class="footer__social-network">
         <h3 class="footer__title footer__title--inline">Social Network</h3>
         <div class="footer__social-link">
-          <a href="#" class="footer__link"><img src="img/facebook.svg" alt="icon: facebook " class="footer__icon"></a>
-          <a href="#" class="footer__link"><img src="img/youtube.svg" alt="icon: youtube " class="footer__icon"></a>
-          <a href="#" class="footer__link"><img src="img/instagram.svg" alt="icon: instagram" class="footer__icon"></a>
+          <a href="https://www.facebook.com/campaign/landing.php?campaign_id=1669307470&extra_1=s%7Cc%7C323127629986%7Ce%7C%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA%7C&placement=&creative=323127629986&keyword=%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA&partner_id=googlesem&extra_2=campaignid%3D1669307470%26adgroupid%3D63446529566%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-300034615170%26loc_physical_ms%3D1011874%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI8ICKu5S78gIVH0CRBR3C6QY3EAAYASAAEgKZJvD_BwE" target="_blank" class="footer__link"><img src="img/facebook.svg" alt="icon: facebook "  class="footer__icon"></a>
+          <a href="https://www.youtube.com/?hl=RU" target="_blank" class="footer__link"><img src="img/youtube.svg" alt="icon: youtube " class="footer__icon"></a>
+          <a href="https://www.instagram.com/" target="_blank" class="footer__link"><img src="img/instagram.svg" alt="icon: instagram" class="footer__icon"></a>
         </div>
         <!-- /.footer__social-links -->
         </div>
       <!-- /.footer__social-network -->
-        <div class="footer__list">
+        <div class="footer__list footer__legal">
           <h3 class="footer__title footer__legal">LEGAL INFORMATION</h3>
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
@@ -391,13 +403,14 @@
             9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
           </li>
           <li class="footer__item footer__item-mb--2"><div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg" alt="icon:phone"></div>
-            Tel (business hours) : 269 1500</br>
-            Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)</br>
-            Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</br>
+            <div class="footer__tel">
+            <span class="footer-tel"> Tel (business hours) : <a class="footer-tel__nomber" href="tel: 269 1500"> 269 1500</a></span></br>
+            <span class="footer-tel"> Tel (hotline) Monday - Saturday: <a class="footer-tel__nomber" href="tel:52-56-61-38 "> 52-56-61-38 </a>(08:00 am – 20:00 pm)</span></br>
+            <span class="footer-tel"> Tel (hotline) Sunday: <a class="footer-tel__nomber" href="tel: 52-56-61-38"> 52-56-61-38 </a> (08:00 am – 14:00 pm)</span></br></div>
 
           </li>
-          <li class="footer__item footer__item-mb--2"><div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg" alt="icon:phone"></div>
-            cherly.lawson@example.com
+          <li class="footer__item footer__item-mb--2"><div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg" alt="icon:phone"></div>
+           <a class="footer-tel__nomber" href="mailto: cherly.lawson@example.com"> cherly.lawson@example.com</a>
           </li>
         </ul>
 
@@ -414,11 +427,32 @@
           <button class="button footer__button" type="submit">Send</button>
           <span class="footer__info">* Required Field</span>
         </form>
-      </div>
+   </div>
+ 
+<div class="footer__social-networks">
+            <div class="footer__social-works">
+        <h3 class="footer__text footer__text--discord">Disclaimer</h3>
+        <h3 class="footer__text footer__text--discord">Conditions of use</h3>
+        <h3 class="footer__text footer__text--discord">Cancellation policy</h3>
+        </div>
+        <div class="footer__social-links">
+          <a href="#" class="footer__social-works"><img src="img/mani.svg" alt="icon: facebook " class="footer__icons"></a>
+
+        </div>
+        <!-- /.footer__social-links -->
+        </div>
+      <!-- /.footer__social-network -->
+   
+
+  
+  
+
+
     </div>
     <!-- /.footer-wrapper -->
-  </div>
+
   <!-- /.container -->
+
 </footer>
 
 <script src="js/swiper-bundle.min.js"></script>
