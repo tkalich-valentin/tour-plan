@@ -348,7 +348,7 @@
      <a  class="footer__logo" href="#"><img src= "img/vartical-logo.svg" alt="Best Tour Plan"></a>
       <div class="footer__list footer__categories">
         <h3 class="footer__title">ALL CATEGORIES</h3>
-        <ul class="footer__ul">
+        <ul class="footer__ul--0">
           <li class="footer__item"><a href="#" class="footer__link"> All Deals</a></li>
           <li class="footer__item"><a href="#" class="footer__link"> Hotels</a></li>
           <li class="footer__item"><a href="#" class="footer__link">Activities</a></li>
@@ -362,7 +362,7 @@
       <!-- /.footer__list -->
 <div class="footer__list footer__additional">
         <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
-        <ul class="footer__ul">
+        <ul class="footer__ul--0">
           <li class="footer__item"><a href="#" class="footer__link">  About Us</a></li>
           <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
           <li class="footer__item"><a href="#" class="footer__link"> How does it work?</a></li>
@@ -385,7 +385,7 @@
       <!-- /.footer__social-network -->
         <div class="footer__list footer__legal">
           <h3 class="footer__title footer__legal">LEGAL INFORMATION</h3>
-          <ul class="footer__ul">
+          <ul class="footer__ul--0">
             <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Disclaimer</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Cancellation policy</a></li>
@@ -398,19 +398,19 @@
 
         <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
         <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
-        <ul class="footer__ul">
-          <li class="footer__item footer__item-mb--2"><div class="footer__icon-wrapper"><img class="footer__icon" src="img/map-marker.svg" alt="icon:map"></div>
+        <ul class="footer__ul--2">
+          <li class="footer__item footer__item-mb--1"><div class="footer__icon-wrapper"><img class="footer__icon" src="img/map-marker.svg" alt="icon:map"></div>
             9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
           </li>
-          <li class="footer__item footer__item-mb--2"><div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg" alt="icon:phone"></div>
+          <li class="footer__item footer__item-mb--1"><div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg" alt="icon:phone"></div>
             <div class="footer__tel">
-            <span class="footer-tel"> Tel (business hours) : <a class="footer-tel__nomber" href="tel: 269 1500"> 269 1500</a></span></br>
-            <span class="footer-tel"> Tel (hotline) Monday - Saturday: <a class="footer-tel__nomber" href="tel:52-56-61-38 "> 52-56-61-38 </a>(08:00 am – 20:00 pm)</span></br>
-            <span class="footer-tel"> Tel (hotline) Sunday: <a class="footer-tel__nomber" href="tel: 52-56-61-38"> 52-56-61-38 </a> (08:00 am – 14:00 pm)</span></br></div>
+            <span class="footer-tel"> Tel (business hours) : <a class="footer-tel__nomber" href="tel:2691500">269 1500</a></br></span>
+            <span class="footer-tel"> Tel (hotline) Monday - Saturday: <a class="footer-tel__nomber" href="tel:52-56-61-38 "> 52-56-61-38 </a>(08:00 am – 20:00 pm)</br></span>
+            <span class="footer-tel"> Tel (hotline) Sunday: <a class="footer-tel__nomber" href="tel:52-56-61-38"> 52-56-61-38 </a> (08:00 am – 14:00 pm)</span></div>
 
           </li>
-          <li class="footer__item footer__item-mb--2"><div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg" alt="icon:phone"></div>
-           <a class="footer-tel__nomber" href="mailto: cherly.lawson@example.com"> cherly.lawson@example.com</a>
+          <li class="footer__item footer__item-mb--1"><div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg" alt="icon:phone"></div>
+           <a class="footer-tel__nomber" href="mailto:cherly.lawson@example.com"> cherly.lawson@example.com</a>
           </li>
         </ul>
 
@@ -420,26 +420,31 @@
       <!-- /.footer__contact-details -->
       <div class="footer__contact-form">
         <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-        <form action="#" class="footer__form">
-          <input type="text" class="input footer__input" placeholder="Your Full Name*">
-          <input type="text" class="input footer__input" placeholder="Phone Number*">
-          <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
+        <form action="send.php" method="POST" class="footer__form">
+          <input type="text" class="input footer__input" placeholder="Your Full Name*"
+          name= "name">
+          
+          <input type="text" class="input footer__input" placeholder="Phone Number*"
+          name="phone">
+          <textarea class="footer__message" placeholder="Message"
+          name="message"></textarea>
           <button class="button footer__button" type="submit">Send</button>
           <span class="footer__info">* Required Field</span>
         </form>
    </div>
  
 <div class="footer__social-networks">
-            <div class="footer__social-works">
+            <div class="footer__social-works-disclaimer">
         <h3 class="footer__text footer__text--discord">Disclaimer</h3>
         <h3 class="footer__text footer__text--discord">Conditions of use</h3>
         <h3 class="footer__text footer__text--discord">Cancellation policy</h3>
         </div>
-        <div class="footer__social-links">
-          <a href="#" class="footer__social-works"><img src="img/mani.svg" alt="icon: facebook " class="footer__icons"></a>
-
         </div>
-        <!-- /.footer__social-links -->
+        
+ 
+          <a href="#" class="footer__social-works"><img src="img/mani.svg" alt="icon: facebook "></a>
+
+  
         </div>
       <!-- /.footer__social-network -->
    
@@ -450,7 +455,7 @@
 
     </div>
     <!-- /.footer-wrapper -->
-
+</div>
   <!-- /.container -->
 
 </footer>
